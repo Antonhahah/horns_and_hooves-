@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Платная Поликлиника «Здоровье и Долголетие»</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section class="container">
+        <header>
+            <h1>Платная Поликлиника «Здоровье и Долголетие»</h1>
+            <h2>Мы работаем для Вас</h2>
+        </header>
+
+        <nav class="horizontal-menu">
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="about.html">О компании</a></li>
+                <li><a href="employee.html">Наши сотрудники</a></li>
+                <li><a href="education.html">Таблицы</a></li>
+                <li><a href="order.html">Запись</a></li>
+                <li class="dropdown">
+                    <a href="#">Медиа</a>
+                    <div class="dropdown-content">
+                        <a href="gallery.html">Галерея</a>
+                        <a href="video.html">Видео</a>
+                    </div>
+                </li>
+                <li><a href="https://www.mvd.ru/" target="_blank" rel="noopener" class="normal-weight" style="color: rgb(6, 6, 46);">Мы чтим УК РФ</a></li>
+            </ul>
+        </nav>
+
+        <div class="main-content">
+            <nav class="vertical-menu">
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="about.html">О компании</a></li>
+                    <li><a href="employee.html">Наши сотрудники</a></li>
+                    <li><a href="education.html">Таблицы</a></li>
+                    <li><a href="order.html">Запись</a></li>
+                    <li class="dropdown">
+                        <a href="#">Медиа</a>
+                        <div class="dropdown-content">
+                            <a href="gallery.html">Галерея</a>
+                            <a href="video.html">Видео</a>
+                        </div>
+                    </li>
+                    <li><a href="https://www.mvd.ru/" target="_blank" rel="noopener" class="normal-weight" style="color: rgb(6, 6, 46);">Мы чтим УК РФ</a></li>
+                </ul>
+            </nav>
+            <main class="content">
+
+
+                <table class="doctors" width="99%" border="1" cellpadding="5" cellspacing="0">
+                    <tr>
+                        <th width="50">Код врача</th>
+                        <th width="150">Фамилия</th>
+                        <th width="100">Имя</th>
+                        <th width="100">Отчество</th>
+                        <th width="150">Специальность</th>
+                        <th width="100">Категория</th>
+                    </tr>
+                    <tr>
+                        <td>001</td>
+                        <td>Иванов</td>
+                        <td>Иван</td>
+                        <td>Иванович</td>
+                        <td>Терапевт</td>
+                        <td>Высшая</td>
+                    </tr>
+                    <tr>
+                        <td>002</td>
+                        <td>Петров</td>
+                        <td>Петр</td>
+                        <td>Петрович</td>
+                        <td>Хирург</td>
+                        <td>Первая</td>
+                    </tr>
+                    <tr>
+                        <td>003</td>
+                        <td>Сидоров</td>
+                        <td>Антон</td>
+                        <td>Александрович</td>
+                        <td>Кардиолог</td>
+                        <td>Высшая</td>
+                    </tr>
+                </table>
+                
+                <!-- Таблица Пациенты -->
+                <table class="patients" width="99%" border="1" cellpadding="5" cellspacing="0">
+                    <tr>
+                        <th width="50">Код пациента</th>
+                        <th width="150">Фамилия</th>
+                        <th width="100">Имя</th>
+                        <th width="100">Отчество</th>
+                        <th width="100">Год рождения</th>
+                    </tr>
+                    <tr>
+                        <td>001</td>
+                        <td>Смирнов</td>
+                        <td>Алексей</td>
+                        <td>Викторович</td>
+                        <td>1985</td>
+                    </tr>
+                    <tr>
+                        <td>002</td>
+                        <td>Кузнецова</td>
+                        <td>Мария</td>
+                        <td>Петровна</td>
+                        <td>1990</td>
+                    </tr>
+                    <tr>
+                        <td>003</td>
+                        <td>Попов</td>
+                        <td>Дмитрий</td>
+                        <td>Сергеевич</td>
+                        <td>1978</td>
+                    </tr>
+                </table>
+                
+                <!-- Таблица Обращения -->
+                <table class="appointments" width="99%" border="1" cellpadding="5" cellspacing="0">
+                    <tr>
+                        <th width="50">Код обращения</th>
+                        <th width="50">Код врача</th>
+                        <th width="50">Код пациента</th>
+                        <th width="100">Дата обращения</th>
+                        <th width="150">Диагноз</th>
+                        <th width="100">Стоимость лечения (руб.)</th>
+                    </tr>
+                    <tr>
+                        <td>001</td>
+                        <td>001</td>
+                        <td>001</td>
+                        <td>2023-01-15</td>
+                        <td>Грипп</td>
+                        <td>1500</td>
+                    </tr>
+                    <tr>
+                        <td>002</td>
+                        <td>002</td>
+                        <td>002</td>
+                        <td>2023-01-20</td>
+                        <td>Аппендицит</td>
+                        <td>25000</td>
+                    </tr>
+                    <tr>
+                        <td>003</td>
+                        <td>003</td>
+                        <td>003</td>
+                        <td>2023-01-25</td>
+                        <td>Гипертония</td>
+                        <td>2000</td>
+                    </tr>
+                </table>
+
+
+
+</main>
+</div>
+      <footer>
+        &copy; 2023 Платная Поликлиника «Здоровье и Долголетие»
+        <button class="scroll-to-top" onclick="scrollToTop()">Наверх</button>
+      </footer>
+    <script>
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+</section> 
+</body>
+</html>

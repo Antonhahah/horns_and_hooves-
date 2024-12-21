@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Платная Поликлиника «Здоровье и Долголетие»</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section class="container">
+        <header>
+            <h1>Платная Поликлиника «Здоровье и Долголетие»</h1>
+            <h2>Мы работаем для Вас</h2>
+        </header>
+
+        <nav class="horizontal-menu">
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="about.html">О компании</a></li>
+                <li><a href="employee.html">Наши сотрудники</a></li>
+                <li><a href="education.html">Таблицы</a></li>
+                <li><a href="order.html">Запись</a></li>
+                <li class="dropdown">
+                    <a href="#">Медиа</a>
+                    <div class="dropdown-content">
+                        <a href="gallery.html">Галерея</a>
+                        <a href="video.html">Видео</a>
+                    </div>
+                </li>
+                <li><a href="https://www.mvd.ru/" target="_blank" rel="noopener" class="normal-weight" style="color: rgb(6, 6, 46);">Мы чтим УК РФ</a></li>
+            </ul>
+        </nav>0
+
+        <div class="main-content">
+            <nav class="vertical-menu">
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="about.html">О компании</a></li>
+                    <li><a href="employee.html">Наши сотрудники</a></li>
+                    <li><a href="education.html">Таблицы</a></li>
+                    <li><a href="order.html">Запись</a></li>
+                    <li class="dropdown">
+                        <a href="#">Медиа</a>
+                        <div class="dropdown-content">
+                            <a href="gallery.html">Галерея</a>
+                            <a href="video.html">Видео</a>
+                        </div>
+                    </li>
+                    <li><a href="https://www.mvd.ru/" target="_blank" rel="noopener" class="normal-weight" style="color: rgb(6, 6, 46);">Мы чтим УК РФ</a></li>
+                </ul>
+            </nav>
+            <main class="content">
+
+
+        <section class="order-form-container">
+            <h2>Запись на прием к врачу</h2>
+            <form action="orderup" method="post">
+                <fieldset>
+                    <legend>Способ оплаты</legend>
+                    <label>
+                        Наличный расчет
+                        <input type="radio" name="payment_method" value="cash" checked />
+                    </label>
+                    <label>
+                        Безналичный расчет
+                        <input type="radio" name="payment_method" value="cashless" />
+                    </label>
+                </fieldset>
+
+                <table>
+                    <tr>
+                        <td align="right">
+                            <label for="last_name">Фамилия</label>
+                        </td>
+                        <td>
+                            <input type="text" id="last_name" name="last_name" required placeholder="Введите фамилию" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="right">
+                            <label for="first_name">Имя</label>
+                        </td>
+                        <td>
+                            <input type="text" id="first_name" name="first_name" required placeholder="Введите имя" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="right">
+                            <label for="patronymic">Отчество</label>
+                        </td>
+                        <td>
+                            <input type="text" id="patronymic" name="patronymic" placeholder="Введите отчество" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="right">
+                            <label for="email">Email</label>
+                        </td>
+                        <td>
+                            <input type="email" id="email" name="email" required placeholder="Введите email" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="right">
+                            <label for="phone">Телефон</label>
+                        </td>
+                        <td>
+                            <input type="tel" id="phone" name="phone" required placeholder="Введите телефон" />
+                        </td>
+                    </tr>
+    
+                    <tr>
+                        <td align="right">
+                            <label for="okrug">Федеральный округ</label>
+                        </td>
+                        <td>
+                            <select id="okrug" name="okrug" required placeholder="Выберите федеральный округ">
+                                <option value="">Выберите округ</option>
+                                <option value="Центральный">Центральный</option>
+                                <option value="Северо-Западный">Северо-Западный</option>
+                                <option value="Приволжский">Приволжский</option>
+                                <option value="Южный">Южный</option>
+                                <option value="Северо-Кавказский">Северо-Кавказский</option>
+                                <option value="Уральский">Уральский</option>
+                                <option value="Сибирский">Сибирский</option>
+                                <option value="Дальневосточный">Дальневосточный</option>
+                            </select>
+                        </td>
+                    </tr>
+    
+                    <tr>
+                        <td colspan="2" class="dodin">Заказываю</td>
+                    </tr>
+                    
+    
+                    <tr id="row-payment-method">
+                        <th id="header-payment-method">Способ оплаты</th>
+                        <td id="cell-payment-method">
+                            <div class="payment-method">
+                                <label><input type="radio" name="payment_method" value="наличный" required> Анализы</label>
+                                <label><input type="radio" name="payment_method" value="безналичный"> УЗИ</label>
+                                <label><input type="radio" name="payment_method" value="безналичный"> Осмотр у врача</label>
+                            </div>
+                        </td>
+                    </tr>
+                <tr>
+                    <tr>
+                        <td valign="top" align="right">
+                            <label for="wishes">Пожелания:</label>
+                        </td>
+                        <td>
+                            <textarea id="wishes" name="wishes" placeholder="Введите ваши пожелания"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center" colspan="2">
+                            <input type="submit" value="Записаться на прием" />
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </section>
+
+
+    </main>
+</div>
+      <footer>
+        &copy; 2023 Платная Поликлиника «Здоровье и Долголетие»
+        <button class="scroll-to-top" onclick="scrollToTop()">Наверх</button>
+      </footer>
+    <script>
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+</section> 
+</body>
+</html>
